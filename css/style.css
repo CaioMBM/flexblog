@@ -36,3 +36,27 @@ img{
 *{
     box-sizing: border-box;
 }
+
+
+/* superinfo */
+.superinfo-bg{
+    color: white;
+    background-color: #122ab2;
+}
+
+.superinfo{
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+}
+
+.superinfo p, .superinfo a{
+    margin: 0 10px 10px 10px;
+}
+
+.superinfo a{
+    color: white;
+}
