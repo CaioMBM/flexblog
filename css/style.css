@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/*
+/*  REMOVER NO ÚLTIMO COMMIT
 .classe {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -100,4 +100,53 @@ img{
 
 .menu-nav a:hover{
     color: #122ab2;
+}
+
+
+
+/* Introdução */
+.introducao{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+    line-height: 1;
+    font-size: 3em;
+}
+
+
+/* Sobre */
+.sobre {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 60px 0;
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+}
+
+.sobre-info{
+    flex: 2 1 300px; /* Esse 300px (flex-basis) é para indicar a largura mínima do conteúdo antes de quebrar */
+    margin: 0 10px;
+}
+
+.sobre-info h1{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.sobre-info p{
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+
+.sobre-img{
+    flex: 1 1 160px; /* Esse 160px (flex-basis) é para indicar a largura mínima do conteúdo antes de quebrar. O elemento pai está com flex-wrap, então quando a largura do conteúdo chegar a 160px, o item vai pra linha de baixo para que ele não tenha menos de 160px de largura. Porém o flex-shrink faz com que se chegar num momento que o espaço disponivel for menor que o indicado no basis, a largura do conteúdo irá ser menor que os valor indicado no flex-basis.
+    Resumo: 
+        - flex-basis: 160px --> Indica que o valor mínmo do conteúdo vai ser 160px, menos que isso ele vai quebrar pra linha debaxio devido o flex-wrap no container;  
+        - flex-shrink: 1    --> Indica que quando não tiver mais espaço pro conteúdo manter o mínimo de largura, que é o valor indicado no flex-basis, o conteúdo vai respeitar o espaço disponível.
+        */
+    margin: 0 10px;
 }
