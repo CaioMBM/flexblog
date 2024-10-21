@@ -8,3 +8,31 @@
     font-style: normal;
 }
 */
+
+/* Reset */
+body, h1, h2, p, ul, li, a{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Nunito", helvetica, arial, sans-serif;
+    color: #222222;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%; /* O max-width: 100% faz com que a img fique responsiva e mostra ela por completo indeoendente do tamanho da tela, se usasse width: 100% o reusltado seria diferente, a img iria se distorcer em telas grandes */
+}
+
+*{
+    box-sizing: border-box;
+}
